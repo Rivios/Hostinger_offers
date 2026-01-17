@@ -17,6 +17,16 @@
     .lightning-bolt {
       animation: spin-slow 3s linear infinite;
       display: inline-block;
+        .gamma-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* This triggers when you touch the card on your tablet */
+.gamma-card:hover, .gamma-card:active {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: #3b82f6; /* Adds a blue tint when touched */
+}
     }
 </style>
     </style>
