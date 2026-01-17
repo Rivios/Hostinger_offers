@@ -7,8 +7,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        details > summary { list-style: none; }
-        details > summary::-webkit-details-marker { display: none; }
+    /* 1. This tells the browser HOW to rotate */
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* 2. This connects the rotation to your BOLT */
+    .lightning-bolt {
+      animation: spin-slow 3s linear infinite;
+      display: inline-block;
+    }
+</style>
     </style>
 </head>
 <body class="<div class="flex items-center gap-2 bg-green-500/10 border border-green-500/50 w-fit px-3 py-1 rounded-full">
